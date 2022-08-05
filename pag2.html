@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+         <h1>Formularios</h1>
+    </header>
+    <main> <!--Nota: A cada elemento del formulario conviene meterlo en un div-->
+        <form action="">
+    <fieldset>
+        <legend>Formulario de contacto</legend>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="escribe tu nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="escribe tu apellido" required>  
+            </div>
+            <br>
+            <div>
+                <label for="email">Escribe tu mail</label>
+                <input type="email" name="email" placeholder="escribe tu email" required>
+            </div>
+            <br>
+            <div>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="nacimiento" required>
+            </div>
+            <br>
+            <div>
+                <label for="pass">Escribe tu password</label>
+                <input type="password" name=pass requiered>
+            </div>
+            <br>
+            <div>
+                <label for="pais">Selecciona tu nacionalidad</label>
+                <select name="pais" id="">
+                    <option value="mex">México</option>
+                    <option value="arg">Argentina</option>
+                    <option value="ch">Chile</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="genero">Género</label>
+                <input type="radio" name="genero" value="Mujer">Mujer
+                <input type="radio" name="genero" value="Hombre">Hombre
+                <input type="radio" name="genero" value="nd">No binario
+            </div>
+            <br>
+            <div>
+                <label for="comentario">Deja tu comentario</label>
+                <br>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribe por lo menos 10 palabras"></textarea>
+            </div>
+            <br>
+            <div>
+                <h5>Aceptar términos y condiciones</h5>
+                <input type="checkbox" name="acepta" value="1" >
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar datos">
+                <br>
+                <input type="reset" value="Borrar datos">
+
+            </div>
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h4>
+            Práctica de formulario.
+        </h4>
+    </footer>
+</body>
+</html>
